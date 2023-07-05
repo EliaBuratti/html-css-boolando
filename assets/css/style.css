@@ -14,7 +14,12 @@
     --bg_sustainability_color: green;
 }
 
-
+header {
+    position: sticky;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -58,8 +63,6 @@ body {
     padding: 1rem;
     background-color: var(--bg_header);
     color: var(--tx_color);
-    position: sticky;
-    z-index: 10000;
     box-shadow: 0 0 10px black;
 }
 
@@ -92,7 +95,7 @@ header .no-style>li , header .col-2>a>i {
 /* main region */
 
 main .row {
-    margin-top: 3rem;
+    margin-top:3rem;
 }
 
 
@@ -114,7 +117,7 @@ main .picture>div {
 }
 
 .picture, .info_card {
-    position: absolute;
+    position: relative;
 }
 
 .discount {
@@ -171,6 +174,7 @@ main .picture>div {
 .five {
     background-image: url(../img/6.webp);
 }
+
 .image, .one, .two, .three, .four, .five {
     height: 34.5rem;
     background-repeat: no-repeat;
