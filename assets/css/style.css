@@ -122,7 +122,7 @@ main .picture>div {
     position: absolute;
 }
 
-.discount, .sustainability {
+.discount, .sustainability, .sustainability_only {
     bottom: 3rem;
     color: var(--tx_color);
     padding: 0.25rem 0.5rem;
@@ -141,6 +141,13 @@ main .picture>div {
     background-color: var(--bg_sustainability_color);
     left: 3.5rem;
 }
+
+.sustainability_only {
+    background-color: var(--bg_sustainability_color);
+    left: 0;
+
+}
+
 
 .heart {
     background-color: var(--tx_color);
