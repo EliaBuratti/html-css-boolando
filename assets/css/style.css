@@ -10,7 +10,7 @@
 :root {
     --bg_header:hsl(24.71deg 100% 50%);
     --tx_color: white;
-    --bg_discount_color: red;
+    --discount_color: red;
     --bg_sustainability_color: green;
 }
 
@@ -105,7 +105,7 @@ main .picture>div {
 }
 
 .discount {
-    background-color: var(--bg_discount_color);
+    background-color: var(--discount_color);
 }
 
 .sustainability {
@@ -119,6 +119,18 @@ main .picture>div {
     font-size: 1.75rem;
     right: 0;
     top: 1rem;
+}
+
+.info_card>span {
+    font-size: small;
+}
+
+.price {
+    color: var(--discount_color);
+}
+
+.old-price {
+    text-decoration-line: line-through;
 }
 
 /* end main region */
