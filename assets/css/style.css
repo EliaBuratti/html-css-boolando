@@ -4,3 +4,123 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* utilities */
+
+:root {
+    --bg_header:hsl(24.71deg 100% 50%);
+    --tx_color: white;
+    --bg_discount_color: red;
+    --bg_sustainability_color: green;
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+}
+
+/* header region */
+
+.nav{
+    padding: 1rem;
+    background-color: var(--bg_header);
+    color: var(--tx_color);
+    position: sticky;
+    z-index: 10000;
+    box-shadow: 0 0 10px black;
+}
+
+
+header .no-style>li {
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+header .col-2>a>i {
+    color: var(--tx_color);
+
+}
+
+header .no-style>li , header .col-2>a>i {
+    padding-left: 0.25rem;
+}
+/* #end header region */
+
+/* main region */
+
+.products {
+    padding-top: 4rem;
+}
+
+.picture {
+    position: relative;
+}
+
+main .picture>img {
+    height: 35rem;
+    background-size: contain;
+    z-index: 0;
+
+}
+
+main .picture>div {
+    position: absolute;
+    z-index: 1;
+}
+
+.discount, .sustainability {
+    bottom: 3rem;
+    color: var(--tx_color);
+    padding: 0.25rem 0.5rem;
+}
+
+.discount {
+    background-color: var(--bg_discount_color);
+}
+
+.sustainability {
+    background-color: var(--bg_sustainability_color);
+    left: 3.5rem;
+}
+
+.heart {
+    background-color: var(--tx_color);
+    padding: 0.5rem 1rem;
+    font-size: 1.75rem;
+    right: 0;
+    top: 1rem;
+}
+
+/* end main region */
+
+
