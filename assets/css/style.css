@@ -94,6 +94,13 @@ body {
     box-shadow: 0 0 10px black;
 }
 
+img {
+    height: 34.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
 
 /* header region */
 
@@ -108,14 +115,6 @@ body {
 main .row {
     margin-top:3rem;
     margin-bottom: 3rem;
-
-}
-
-
-main .picture>div>img {
-    height: 34rem;
-    background-size: contain;
-
 }
 
 main .picture>div {
@@ -169,71 +168,20 @@ main .picture>div {
 .old-price {
     text-decoration-line: line-through;
 }
-
-.image {
-    background-image: url(../img/1.webp);
-    z-index: 1;
+.hidden {
+    top:0;
+    left: 0;
+    position: absolute;
 }
 
-.one {
-    background-image: url(../img/2.webp);
-}
-
-.two {
-    background-image: url(../img/3.webp);
-}
-
-.three {
-    background-image: url(../img/4.webp);
-}
-
-.four {
-    background-image: url(../img/5.webp);
-}
-
-.five {
-    background-image: url(../img/6.webp);
-}
-
-.image, .one, .two, .three, .four, .five {
-    height: 34.5rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
+.hidden:hover {
+    display: none;
 }
 
 
 .heart:hover {
     color:var(--discount_color);
 }
-
-
-.image:hover{
-    background-image: url(../img/1b.webp);
-}
-
-.one:hover {
-    background-image: url(../img/2b.webp);
-}
-
-.two:hover {
-    background-image: url(../img/3b.webp);
-}
-
-.three:hover {
-    background-image: url(../img/4b.webp);
-}
-
-.four:hover {
-    background-image: url(../img/5b.webp);
-}
-
-.five:hover {
-    background-image: url(../img/6b.webp);
-}
-
-
-
 
 /* end main region */
 
